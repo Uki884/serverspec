@@ -1,7 +1,11 @@
 # 環境構築
 ## ruby実行環境構築
-## bundle install実行
+## serverspecインストール
+```
+bundle install #Gemfileがあるフォルダで実行
+```
 bundlerがない場合はgem install bundlerでグローバルにインストールする。
+
 
 # 使い方
 - configファイルを~/.ssh/配下に配置し、中身を編集する。
