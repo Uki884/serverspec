@@ -1,0 +1,4 @@
+Host 3.112.131.83
+  hostname 3.112.131.83
+  user ec2-user 
+  IdentityFile ~/.ssh/mf.pem

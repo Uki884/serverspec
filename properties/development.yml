@@ -1,0 +1,5 @@
+zenitaka:
+  :roles:
+    - common/
+    - nginx/
+  :hostname: 3.112.131.83
