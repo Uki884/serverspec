@@ -10,7 +10,7 @@ end
 
 describe "nginxバージョン確認" do
     describe command('nginx -v |grep nginx') do
-        its(:stderr) { should match /1.14.*/ }
+        its(:stderr) { should match /1.17.*/ }
     end
 end
 
@@ -34,7 +34,7 @@ describe "nginx設定" do
     #80番をlistenしてること
     its(:content) { should match /listen 80;/}
     #ドメインが指定されていること確認
-    its(:content) { should match /server_name zenitaka\.m-fld\.jp;/ }
+    its(:content) { should match /server_name kts\.m-fld\.jp;/ }
     #httpがhttpsにフォワーディングされること
     #its(:content) { should match /return 301 https://$host$request_uri;/}
     end

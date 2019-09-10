@@ -1,5 +1,9 @@
-zenitaka:
+kts:
   :roles:
+    - app/
     - common/
     - nginx/
-  :hostname: 3.112.131.83
+    - db/
+    - mail/
+    - efs/
+  :hostname: 3.115.66.71

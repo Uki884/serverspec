@@ -7,7 +7,7 @@ require 'spec_helper'
 
   #PHPモジュール確認
   %w{php-gd php-common php-json php-mbstring php-pdo php-xml php-xmlrpc php-pecl-zip php-pecl-mcrypt php-mysqlnd php-fpm}.each do |pkg|
-    describe pacskage(pkg) do
+    describe package(pkg) do
       it { should be_installed }
     end
   end
@@ -25,6 +25,7 @@ require 'spec_helper'
   describe port(80) do
     it { should be_listening }
   end
+  #httpsをlistenしてること
   # describe port(443) do
   #   it { should be_listening }
   # end
@@ -33,16 +34,16 @@ require 'spec_helper'
       its(:value) { should eq 'text/html' }
     end
     context php_config('expose_php') do
-    its(:value) { should eq 'Off' }
+      its(:value) { should eq '' }
     end
     context php_config('upload_max_filesize') do
-      its(:value) { should eq '2M' }
+      its(:value) { should eq '256M' }
     end
     context php_config('post_max_size') do
       its(:value) { should eq '8M' }
     end
     context php_config('memory_limit') do
-      its(:value) { should eq '512M' }
+      its(:value) { should eq '1024M' }
     end
 end
 

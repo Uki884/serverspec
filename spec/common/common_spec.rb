@@ -1,9 +1,9 @@
 require 'spec_helper'
 describe "ホスト設定" do
   # #ホスト名確認
-  #  describe command('hostname') do
-  #    its(:stdout) { should match /zenitaka.m-fld.jp/ } #//にホスト名記載
-  #  end
+  describe command('hostname') do
+    its(:stdout) { should match /kts.m-fld.jp/ } #//にホスト名記載
+  end
 
 #タイムゾーン確認
   describe command('date') do
