@@ -26,10 +26,10 @@ zenitaka:
 ```
 - Serverspecテストを実行する。
 ```
-serverspec:zenitaka #ホスト名を指定した実行方法。個別に実行できる。
+rake serverspec:zenitaka #ホスト名を指定した実行方法。個別に実行できる。
 ```
 ```
-serverspec:all #properties/development.ymlに記載したすべてのホストでテストを実行
+rake serverspec:all #properties/development.ymlに記載したすべてのホストでテストを実行
 ```
 以下が出たら「ec2-user」と入力しユーザーを指定する。
 ```
