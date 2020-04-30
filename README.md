@@ -18,15 +18,16 @@ Host 3.112.131.83 #ホスト名 IPorDNS名で記載
 ```
 - properties/development.ymlを編集し接続先サーバを設定する。
 ```
-zenitaka:
+sample:
   :roles: #記載したディレクトリ配下のspecファイルをすべて実行する。
     - common/
     - nginx/
-  :hostname: 3.112.131.83 #接続先サーバ名orDNS名
+    ...
+  :hostname: 192.168.0.2 #接続先サーバ名orDNS名
 ```
 - Serverspecテストを実行する。
 ```
-rake serverspec:zenitaka #ホスト名を指定した実行方法。個別に実行できる。
+rake serverspec:sample #ホスト名を指定した実行方法。個別に実行できる。
 ```
 ```
 rake serverspec:all #properties/development.ymlに記載したすべてのホストでテストを実行

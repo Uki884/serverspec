@@ -1,4 +1,4 @@
-kts:
+sample:
   :roles:
     - app/
     - common/
@@ -6,4 +6,4 @@ kts:
     - db/
     - mail/
     - efs/
-  :hostname: 3.115.66.71
+  :hostname: 192.168.0.2
