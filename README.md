@@ -11,10 +11,10 @@ bundlerがない場合はgem install bundlerでグローバルにインストー
 - configファイルを~/.ssh/配下に配置し、中身を編集する。
 
 ```
-Host 3.112.131.83 #ホスト名 IPorDNS名で記載
-  hostname 3.112.131.83 #IPorDNS名で記載
+Host 192.168.0.2#ホスト名 IPorDNS名で記載
+  hostname 192.168.0.2 #IPorDNS名で記載
   user ec2-user #ログインユーザー指定。AmazonLinuxの場合はec2-user
-  IdentityFile ~/.ssh/mf.pem #秘密鍵(pem)キーの置き場所指定
+  IdentityFile ~/.ssh/sample.pem #秘密鍵(pem)キーの置き場所指定
 ```
 - properties/development.ymlを編集し接続先サーバを設定する。
 ```
